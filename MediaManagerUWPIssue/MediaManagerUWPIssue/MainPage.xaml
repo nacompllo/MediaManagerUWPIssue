@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"             
+             x:Class="MediaManagerUWPIssue.MainPage">
+    <AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                     AbsoluteLayout.LayoutFlags="All"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand">
+            <mm:VideoView x:Name="video"
+                          HeightRequest="600"
+                          WidthRequest="800"
+                          Source="https://vjs.zencdn.net/v/oceans.mp4"
+                          VideoAspect="AspectFit"
+                          ShowControls="True"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center" />
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
